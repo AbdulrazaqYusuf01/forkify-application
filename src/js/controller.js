@@ -131,7 +131,7 @@ const init = function () {
   addRecipeView.addHandlerUpload(controlAddRecipe);
 };
 init();
-// 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
+//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
 
 // Object spreading trick
 // const t = {
