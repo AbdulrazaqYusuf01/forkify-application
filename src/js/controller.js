@@ -11,14 +11,7 @@ import 'core-js/stable';
 import 'regenerator-runtime';
 import { async } from 'regenerator-runtime';
 
-// const recipeContainer = document.querySelector('.recipe');
-
 // https://forkify-api.herokuapp.com/v2
-
-///////////////////////////////////////
-// if (module.hot) {
-//   module.hot.accept();
-// }
 
 const controlRecipes = async function () {
   try {
@@ -128,10 +121,6 @@ const controlAddRecipe = async function (newRecipe) {
   }
 };
 
-const addWelcome = function () {
-  console.log('Welcome to the application!');
-};
-
 const init = function () {
   bookmarksView.addHandlerRender(controlBookmark);
   recipeView.addHandlerRender(controlRecipes);
@@ -140,9 +129,9 @@ const init = function () {
   searchView.addHandlerSearch(controlSearchResults);
   paginationView.addHandlerPagination(controlPagination);
   addRecipeView.addHandlerUpload(controlAddRecipe);
-  addWelcome();
 };
 init();
+// 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
 
 // Object spreading trick
 // const t = {
